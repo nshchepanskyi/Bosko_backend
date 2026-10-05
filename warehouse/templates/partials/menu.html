@@ -1,3 +1,4 @@
+{% load catalog_extras %}
 <nav class="main-nav" aria-label="Головна навігація">
-    <a href="{% url 'catalog:product_list' %}">Товари</a>
+    <a href="{% url 'catalog:product_list' %}">Товари <span class="nav-count">{% product_count %}</span></a>
 </nav>
